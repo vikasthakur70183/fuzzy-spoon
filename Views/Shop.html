@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Shop.css">
+    </head>
+    <body>
+        <div class="main_div">
+            <h3>Price List</h3>
+            <ul class="price_list">
+                <li>Mouse Price - 500Rs</li>
+                <li>Keyboard price - 1000 Rs</li>
+                <li>Display price - 10000 Rs</li>
+                <li>CPU Price - 35000 Rs</li>
+                <li>Laptop Price - 47000 Rs</li>
+            </ul>
+            <form class="Form" action="/getcart" method="POST">
+                <label>Items</label>
+                <select name="item">
+                    <option name="Mouse">Mouse</option>
+                    <option name="Keyboard">Keyboard</option>
+                    <option name="Display">Display</option>
+                    <option name="CPU">CPU</option>
+                    <option name="Laptop">Laptop</option>
+                </select>
+                <input type="text" name="qty"
+                    placeholder="Enter the Quantity of above item you want to purchase">
+                <button type="submit">submit</button>
+            </form>
+            <a href="http://localhost:3000/cart">
+                <button>Go To cart</button>
+            </a>
+        </div>
+
+    </body>
+</html>

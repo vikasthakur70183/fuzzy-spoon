@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Cart.css">
+    </head>
+    <body>
+
+        <div class="Cart">
+            <h1>Shopping Cart</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% items.forEach((item)=> { %>
+                    <tr>
+                        <td><%= item.id %></td>
+                        <td><%= item.item %></td>
+                        <td><%= item.qty %></td>
+                        <td><%= item.total %></td>
+                    </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+            <p>Total Cost: <%=total%></p>
+        </div>
+        <a href="http://localhost:3000">
+            <button>Go to Shop</button>
+        </a>
+    </body>
+</html>
